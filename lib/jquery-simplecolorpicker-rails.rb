@@ -3,7 +3,8 @@ require "jquery-simplecolorpicker-rails/version"
 module Jquery
   module Simplecolorpicker
     module Rails
-      # Your code goes here...
+      class Engine < ::Rails::Engine
+      end
     end
   end
 end
