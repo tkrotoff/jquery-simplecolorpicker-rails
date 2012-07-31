@@ -32,26 +32,28 @@ If you use [simple_form](https://github.com/plataformatec/simple_form) then writ
     <%= f.input :color, collection: MY_COLORS, selected: my_default_color %>
 
 With `MY_COLORS` being:
-
-    # Colors from Google Calendar
-    MY_COLORS = {
-      'Green'       => '#7bd148',
-      'Bold blue'   => '#5484ed',
-      'Blue'        => '#a4bdfc',
-      'Turquoise'   => '#46d6db',
-      'Light green' => '#7ae7bf',
-      'Bold green'  => '#51b749',
-      'Yellow'      => '#fbd75b',
-      'Orange'      => '#ffb878',
-      'Red'         => '#ff887c',
-      'Bold red'    => '#dc2127',
-      'Purple'      => '#dbadff',
-      'Gray'        => '#e1e1e1',
-    }
+```ruby
+# Colors from Google Calendar
+MY_COLORS = {
+  green:       '#7bd148',
+  bold_blue:   '#5484ed',
+  blue:        '#a4bdfc',
+  turquoise:   '#46d6db',
+  light_green: '#7ae7bf',
+  bold_green:  '#51b749',
+  yellow:      '#fbd75b',
+  orange:      '#ffb878',
+  red:         '#ff887c',
+  bold_red:    '#dc2127',
+  purple:      '#dbadff',
+  gray:        '#e1e1e1'
+}
+```
 
 And `my_default_color` being:
-
-    my_default_color = MY_COLORS['Yellow']
+```ruby
+my_default_color = MY_COLORS[:green]
+```
 
 ## License
 
