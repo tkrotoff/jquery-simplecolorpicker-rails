@@ -27,9 +27,15 @@ Add the following stylesheet file to `app/assets/stylesheets/application.css`:
 
     *= require jquery.simplecolorpicker.css
 
-If you use [simple_form](https://github.com/plataformatec/simple_form) then write this inside your form:
+If you use [simple_form](https://github.com/plataformatec/simple_form) write this inside your form:
 
     <%= f.input :color, collection: MY_COLORS, selected: my_default_color %>
+
+And then inside your JavaScript:
+
+```JavaScript
+$('#color').simplecolorpicker();
+```
 
 With `MY_COLORS` being:
 ```ruby
