@@ -1,5 +1,7 @@
 # jQuery simplecolorpicker for Rails
 
+**I will not continue to maintain this gem as I don't use Rails asset pipeline anymore.**
+
 Simplecolorpicker packaged for the Rails 3.1+ asset pipeline.
 Check [simplecolorpicker project home page](https://github.com/tkrotoff/jquery-simplecolorpicker).
 
